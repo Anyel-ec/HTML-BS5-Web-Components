@@ -1,0 +1,78 @@
+/* Aquí va tu CSS existente sin cambios */
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    width: 600px;
+    height: 500px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.logo img {
+    width: 40%;
+    height: auto;
+    text-align: center;
+}
+
+.input input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input input[type="submit"] {
+    background-color: #224b9d;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.link a {
+    text-decoration: none;
+    color: #3366cc;
+}
+
+.idioma select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Eliminar bordes predeterminados del select */
+.idioma select {
+    width: 100%;
+    margin-right: 0px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    color: #224b9d;
+}
+
+/* Estilo para el enlace de "Aviso de cookies" */
+.idioma span {
+    margin-left: 300px;
+    color: #224b9d;
+    /* Puedes ajustar este margen según tu preferencia */
+}
+
+/* Alinear el enlace al final de la fila */
+.idioma {
+    display: flex;
+    align-items: center;
+}
