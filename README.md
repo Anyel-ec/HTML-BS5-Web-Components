@@ -103,8 +103,18 @@ To change the language of the page, you can follow one of these links:
 ### Personal Area 
 ![Screenshot 2](doc/area.PNG) 
 ### My Courses 
-![Screenshot 3](doc/courses.PNG) 
+![Screenshot 3](doc/cursos.PNG) 
 ### Main Page 
-![Screenshot 4](doc/home.PNG) 
+![Screenshot 4](doc/inicio.PNG) 
 
 Explore and enjoy the Moodle Replica project experience!
+
+
+## Link Social
+[![My Page](https://img.shields.io/badge/Página%20Web-212121?style=for-the-badge&logo=google-chrome&logoColor=FFCA28&labelColor=212121)](https://anyel.top/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-212121?style=for-the-badge&logo=linkedin&logoColor=0A66C2&labelColor=212121)](https://www.linkedin.com)
+[![TikTok](https://img.shields.io/badge/TikTok-212121?style=for-the-badge&logo=tiktok&logoColor=f24c0a&labelColor=212121)](https://www.tiktok.com/@anyel.ec)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-212121?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=212121)](https://api.whatsapp.com/send?phone=593991675490&text=Un%20gusto%20en%20saludarte💻🌟)
+[![YouTube](https://img.shields.io/badge/YouTube-212121?style=for-the-badge&logo=youtube&logoColor=FF0000&labelColor=212121)](https://www.youtube.com/channel/UC7In8IjfwKn-PUMYaC0NtUg)
+[![Facebook](https://img.shields.io/badge/Facebook-212121?style=for-the-badge&logo=facebook&logoColor=1877F2&labelColor=212121)](https://www.facebook.com/ecanyel/)
+

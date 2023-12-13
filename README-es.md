@@ -108,4 +108,12 @@ Para cambiar el idioma de la página, puedes seguir uno de estos enlaces:
 ![Captura de Pantalla 2](doc/inicio.PNG) 
 
 
+## Link Social
+[![My Page](https://img.shields.io/badge/Página%20Web-212121?style=for-the-badge&logo=google-chrome&logoColor=FFCA28&labelColor=212121)](https://anyel.top/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-212121?style=for-the-badge&logo=linkedin&logoColor=0A66C2&labelColor=212121)](https://www.linkedin.com)
+[![TikTok](https://img.shields.io/badge/TikTok-212121?style=for-the-badge&logo=tiktok&logoColor=f24c0a&labelColor=212121)](https://www.tiktok.com/@anyel.ec)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-212121?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=212121)](https://api.whatsapp.com/send?phone=593991675490&text=Un%20gusto%20en%20saludarte💻🌟)
+[![YouTube](https://img.shields.io/badge/YouTube-212121?style=for-the-badge&logo=youtube&logoColor=FF0000&labelColor=212121)](https://www.youtube.com/channel/UC7In8IjfwKn-PUMYaC0NtUg)
+[![Facebook](https://img.shields.io/badge/Facebook-212121?style=for-the-badge&logo=facebook&logoColor=1877F2&labelColor=212121)](https://www.facebook.com/ecanyel/)
+
 ¡Explora y disfruta de la experiencia del proyecto Moodle Replica!
