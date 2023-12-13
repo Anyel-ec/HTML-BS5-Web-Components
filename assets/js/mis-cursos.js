@@ -1,84 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
+class MiNavegacion extends HTMLElement {
+    constructor() {
+        super();
+        const shadow = this.attachShadow({ mode: 'open' });
 
-<head>
-  <meta charset="UTF-8">
-  <title>Navegación</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-  <!--CDN bs5-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
-</head>
-<style>
-  .navbar-brand {
-    letter-spacing: 3px;
-    color: #000000;
-  }
+        // Agregar estilos de Bootstrap al sombreado
+        const bootstrapStyles = document.createElement('link');
+        bootstrapStyles.rel = 'stylesheet';
+        bootstrapStyles.href = 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css';
+        shadow.appendChild(bootstrapStyles);
 
-  .navbar-brand:hover {
-    color: #c24244;
-  }
+        shadow.innerHTML += `
+          <style>
+            .navbar-brand {
+              letter-spacing: 3px;
+              color: #000000;
+            }
 
-  .navbar-scroll .nav-link,
-  .navbar-scroll .fa-bars {
-    color: #000000;
-  }
+            .navbar-brand:hover {
+              color: #c24244;
+            }
 
-  .navbar-scrolled .nav-link,
-  .navbar-scrolled .fa-bars {
-    color: #7f4722;
-  }
+            .navbar-scroll .nav-link,
+            .navbar-scroll .fa-bars {
+              color: #000000;
+            }
 
-  .navbar-scrolled {
-    background-color: #ffffff;
-  }
-</style>
+            .navbar-scrolled .nav-link,
+            .navbar-scrolled .fa-bars {
+              color: #7f4722;
+            }
 
-<body>
-  <nav class="navbar navbar-expand-lg fixed-top navbar-scroll shadow-0" style="background-color: #ffffff;">
-    <div class="container">
-      <img src="assets/idiomas.png" alt="" width="6%" height="50px">
-      <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-        aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="d-flex justify-content-start align-items-center">
-          <i class="fas fa-bars"></i>
-        </span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarExample01">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item active">
-            <strong class="nav-link px-3 active" href="#!">Pagina Principal</strong>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3" href="#!">Area Personal</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3" href="#!">Mis cursos</a>
-          </li>
+            .navbar-scrolled {
+              background-color: #ffffff;
+            }
+          </style>
 
-        </ul>
+          <nav class="navbar navbar-expand-lg fixed-top navbar-scroll shadow-0" style="background-color: #ffffff;">
+            <div class="container">
+              <img src="assets/idiomas.png" alt="" width="6%" height="50px">
+              <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+                aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="d-flex justify-content-start align-items-center">
+                  <i class="fas fa-bars"></i>
+                </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarExample01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item active">
+                    <a class="nav-link px-3" href="#!">Pagina Principal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-3" href="#!">Area Personal</a>
+                  </li>
+                  <li class="nav-item">
+                    <strong class="nav-link px-3 active" href="#!">Mis cursos</strong>
+                  </li>
+                </ul>
 
-        <ul class="navbar-nav flex-row">
-          <li class="nav-item">
-            <a class="nav-link pe-3" href="#!">
-              <i class="fas fa-bell"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3" href="#!">
-              <i class="fas fa-comment"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <div
-              style="width: 30px; height: 30px; margin-top: 05px; background-color: #666869; border-radius: 50%; color: white; font-weight: bold; font-size: 20px;">
-              AP
+                <ul class="navbar-nav flex-row">
+                  <li class="nav-item">
+                    <a class="nav-link pe-3" href="#!">
+                      <i class="fas fa-bell"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-3" href="#!">
+                      <i class="fas fa-comment"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <div
+                      style="width: 30px; height: 30px; margin-top: 05px; background-color: #666869; border-radius: 50%; color: white; font-weight: bold; font-size: 20px;">
+                      AP
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <section class="">
+          </nav>
+          <section class="">
     <div class="mt-5" style="background-color: #b3b3b3;">
       <div class="container">
         <div class="row">
@@ -220,7 +220,8 @@
       </div>
       <!--Grid row-->
   </footer>
-  
-</body>
+        `;
+    }
+}
 
-</html>
+customElements.define('mi-navegacion', MiNavegacion);

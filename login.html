@@ -6,33 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi CAMPUS</title>
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
-    <div class="card">
-        <div class="logo">
-            <center>
-                <img src="assets/idiomas.png" alt="">
-            </center>
-        </div>
-        <div class="input">
-            <input type="text" placeholder="Ingrese su usuario o correo">
-            <input type="password" name="" id="" placeholder="Ingrese su contraseña">
-            <input type="submit" value="Acceder" class="btn btn-primary">
-        </div>
-        <div class="link">
-            <center>
-                <a href="">¿Ha extraviado la contraseña?</a>
-            </center>
-        </div>
-        <div class="idioma">
-            <select name="dssd" id="">
-                <option value="Español - internacional (es)">Español - internacional (es)</option>
-            </select>
-            <span href="Aviso de cookies">Aviso de cookies</a>
-        </div>
-
-    </div>
+    <!-- Primero -->
+    <mi-campus-login usernamePlaceholder="Digite su nombre:"
+        passwordPlaceholder="Digite su contraseña:" submitButtonText="enviar"
+        forgotPasswordLink="Eliga el idioma" forgotPasswordText="Ha olvidado su contraseña?"
+        languageOptionValue="Custom language option value" languageOptionText="Escoga su idioma"
+        cookiesLink="Cookies" cookiesText="Cookies"></mi-campus-login>
+    <!-- Segundo-->
+    <!-- <mi-campus-login usernamePlaceholder="Segundo componente"
+        passwordPlaceholder="Contraseña" submitButtonText="Este boton se cambia"
+        forgotPasswordLink="Eliga el idioma" forgotPasswordText="Recuperar contraseña"
+        languageOptionValue="Custom language option value" languageOptionText="ESPAÑOL"
+        cookiesLink="Cookies" cookiesText="Aceptar cookies"></mi-campus-login> -->
+    <script src="assets/js/mi-campus-login.js"></script>
 </body>
 
 </html>
