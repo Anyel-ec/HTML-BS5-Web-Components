@@ -1,41 +1,110 @@
-# README.md - Replica de Moodle con Componentes Web
+# Usage of Components in the Project - Moodle Replica
 
-Este proyecto es una replicación web de Moodle utilizando componentes web. El sistema consta de dos páginas principales: la página de navegación (`index.html`) y la página de inicio de sesión (`login.html`). A continuación, se proporciona una descripción general del código y la estructura del proyecto.
+This project involves the implementation of various web components that together form a replica of the Moodle interface. Each component has its own specific purpose and functionality. Below, the main components are described along with how to integrate them into your project.
 
-## Página de Navegación (`index.html`)
+## Project Components
 
-### Tecnologías Utilizadas
-- HTML5
-- Bootstrap 5
-- Font Awesome 6
-- Estilos CSS personalizados
+### 1. `pagina-principal`
 
-### Descripción
-La página de navegación proporciona una interfaz intuitiva para acceder a las diferentes secciones del sistema. Algunas características notables incluyen:
+The `pagina-principal` component provides a basic structure for the site's main page. It includes a navigation bar, course sections, and an informative footer.
 
-- Barra de navegación con efecto de cambio de color al hacer scroll.
-- Iconos interactivos y diseño moderno.
-- Sección de "Mis Cursos" con tarjetas informativas y barras de progreso.
-- Botón para ver todos los cursos disponibles.
-- Pie de página con enlaces de contacto y descarga de la aplicación móvil.
+**Usage:**
+```html
+<pagina-principal></pagina-principal>
+```
 
-## Página de Inicio de Sesión (`login.html`)
+### 2. `area-personal`
 
-### Tecnologías Utilizadas
-- HTML5
-- Estilos CSS personalizados
+The `area-personal` component is intended for the user's personal area section. It includes functionalities such as notifications and messages.
 
-### Descripción
-La página de inicio de sesión presenta una interfaz limpia y sencilla para que los usuarios ingresen al sistema. Características clave:
+**Usage:**
+```html
+<area-personal></area-personal>
+```
 
-- Formulario de inicio de sesión con campos de usuario y contraseña.
-- Enlace para recuperar contraseña.
-- Selector de idioma y enlace a la política de cookies.
+### 3. `mi-campus-login`
 
-## Instrucciones de Uso
+The `mi-campus-login` component provides a customized login form with language options, password recovery links, and cookie settings.
 
-1. Abre el archivo `index.html` en tu navegador para acceder a la página principal.
-2. Para probar la página de inicio de sesión, abre el archivo `login.html`.
-3. Explora la interfaz de usuario y prueba las funcionalidades de navegación.
+**Usage:**
+```html
+<mi-campus-login usernamePlaceholder="..." passwordPlaceholder="..." submitButtonText="..."
+    forgotPasswordLink="..." forgotPasswordText="..." languageOptionValue="..."
+    languageOptionText="..." cookiesLink="..." cookiesText="..."></mi-campus-login>
+```
 
-¡Disfruta explorando esta replicación web de Moodle con componentes web! Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros a través de los enlaces proporcionados en el pie de página.
+### 4. `mis-cursos`
+
+The `mis-cursos` component presents a navigation interface to access available courses. It includes course cards with information and progress.
+
+**Usage:**
+```html
+<mis-cursos></mis-cursos>
+```
+
+## Integration into Your Project
+
+1. Clone this repository to your local machine:
+
+    ```bash
+    git clone https://github.com/Anyel-ec/HTML-BS5-Web-Components-ReplicationMoodle
+    ```
+
+2. In your main HTML file, link the JavaScript files of each component you need:
+
+    ```html
+    <script src="path/to/area-personal.js"></script>
+    <script src="path/to/inicio.js"></script>
+    <script src="path/to/mi-campus-login.js"></script>
+    <script src="path/to/mis-cursos.js"></script>
+    ```
+
+3. Integrate the necessary components into your HTML:
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Moodle Replica</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <!-- CDN bs5 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <pagina-principal></pagina-principal>
+        <area-personal></area-personal>
+        <mi-campus-login></mi-campus-login>
+        <mis-cursos></mis-cursos>
+
+        <script src="path/to/inicio.js"></script>
+        <script src="path/to/area-personal.js"></script>
+        <script src="path/to/mi-campus-login.js"></script>
+        <script src="path/to/mis-cursos.js"></script>
+    </body>
+
+    </html>
+    ```
+
+4. Customize and enjoy your Moodle Replica!
+
+## Language Change
+
+To change the language of the page, you can follow one of these links:
+- [Readme in English](./README.md)
+- [Readme in Spanish](./README-es.md)
+
+## Screenshots
+
+### Login 
+![Screenshot 1](doc/login.PNG) 
+### Personal Area 
+![Screenshot 2](doc/area.PNG) 
+### My Courses 
+![Screenshot 3](doc/courses.PNG) 
+### Main Page 
+![Screenshot 4](doc/home.PNG) 
+
+Explore and enjoy the Moodle Replica project experience!
